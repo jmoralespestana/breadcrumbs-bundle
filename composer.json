@@ -1,0 +1,35 @@
+{
+    "name": "jimp/breadcrumbs-bundle",
+    "type": "symfony-bundle",
+    "description": "Breadcrumbs implementation for symfony 3 that uses the route configurations as a tree to avoid repetitive code for generating breadcrumbs.",
+    "keywords": ["breadcrumbs", "breacrumb","jimp","routing"],
+    "homepage": "http://jimp.github.com",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Juan Ignacio Morales Pestana",
+            "email": "jmoralespestana@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "symfony/framework-bundle": "^3.0",
+        "symfony/twig-bundle": "^2.7 || ^3.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "JIMP\\BreadcumbsBundle\\": ""
+        },
+        "exclude-from-classmap": [
+            "/Tests/"
+        ]
+    },
+   // "extra": {
+   //     "branch-alias": {
+    //        "dev-master": "2.0.x-dev"
+    //    }
+    //},
+    "support": {
+        "docs": "https://symfony.com/doc/master/bundles/FOSUserBundle/index.html"
+    }
+}

@@ -1,0 +1,21 @@
+parameters:
+    jimp_breadcrumbs.class: JIMP\BreadcrumbsBundle\Service\BreadcrumbsService
+    jimp_breadcrumbs_subscriber.class: JIMP\BreadcrumbsBundle\EventSubscriber\BreadcumbsSubscriber
+    jimp_breadcrumbs_twig.class: JIMP\BreadcrumbsBundle\Twig\Extension\BreadcrumbExtension
+
+services:
+    jimp_breadcrumbs:
+        class: "%jimp_breadcrumbs.class%"
+        arguments: ["@service_container"]
+
+    jimp_breadcrumbs_subscriber:
+        class: "%jimp_breadcrumbs_subscriber.class%"
+        arguments: ["@service_container"]
+        tags:
+            - { name: kernel.event_subscriber }
+
+    jimp_breadcumbs_twig:
+        class: "%jimp_breadcrumbs_twig.class%"
+        arguments: ["@service_container"]
+        tags:
+            - { name: twig.extension }

@@ -1,0 +1,14 @@
+jimp_breadcrumbs_homepage:
+    path:     /hello/{name}/
+    defaults:
+        _controller: JIMPBreadcrumbsBundle:Default:index
+        label: 'Home'
+
+jimp_breadcrumbs_greets:
+    path:     /hello-and-welcome/{name}/
+    defaults:
+        _controller: JIMPBreadcrumbsBundle:Default:greets
+        label: 'Hello and welcome {name}'
+        parent: 'jimp_breadcrumbs_homepage'
+    requirements:
+        name:  '\w+'

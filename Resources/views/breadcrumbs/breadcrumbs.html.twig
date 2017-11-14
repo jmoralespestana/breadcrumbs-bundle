@@ -1,0 +1,12 @@
+{% trans_default_domain('breadcrumbs') %}
+{% if breadcrumbs|length %}
+    <ul class="{{ containerClass }}">
+        {% for bc in breadcrumbs %}
+            {% if loop.last or not bc.url %}
+                <li>{{ bc.label|trans }}</li>
+            {% else %}
+                <li><a href="{{ bc.url }}">{{ bc.label|trans }}</a><i class="{{ separatorClass }}"></i></li>
+            {% endif %}
+        {% endfor %}
+    </ul>
+{% endif %}
