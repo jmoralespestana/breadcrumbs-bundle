@@ -3,7 +3,7 @@
     "type": "symfony-bundle",
     "description": "Breadcrumbs implementation for symfony 3 that uses the route configurations as a tree to avoid repetitive code for generating breadcrumbs.",
     "keywords": ["breadcrumbs", "breadcrumb","jimp","routing"],
-    "homepage": "http://jimp.github.com",
+    "homepage": "https://github.com/jmoralespestana",
     "license": "MIT",
     "authors": [
         {
