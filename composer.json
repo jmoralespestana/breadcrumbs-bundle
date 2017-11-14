@@ -23,13 +23,5 @@
         "exclude-from-classmap": [
             "/Tests/"
         ]
-    },
-   // "extra": {
-   //     "branch-alias": {
-    //        "dev-master": "2.0.x-dev"
-    //    }
-    //},
-    "support": {
-        "docs": "https://symfony.com/doc/master/bundles/FOSUserBundle/index.html"
-    }
+    }    
 }
