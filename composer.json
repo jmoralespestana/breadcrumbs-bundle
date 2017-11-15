@@ -1,5 +1,5 @@
 {
-    "name": "jimp/breadcrumbs-bundle",
+    "name": "jmoralespestana/breadcrumbs-bundle",
     "type": "symfony-bundle",
     "description": "Breadcrumbs implementation for symfony 3.",
     "keywords": ["breadcrumbs", "breadcrumb","jimp","routing"],
